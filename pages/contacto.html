@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Inicio Barra de Navegacion-->
+    <header>
+      <nav class="nav">
+        <!--Logo-->
+        <div class="nav__logo">
+          <a href="../index.html"
+            ><img
+              src="../images/logoipsum-logo-14.svg"
+              alt="logoCafecomleite"
+            />
+            <div class="nav__logoText">Café com Leite</div></a
+          >
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="nuestroCafe.html">Nuestro Café</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="menu.html">Menú</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="nuestraEmpresa.html">Nuestra Empresa</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Fin Barra de Navegacion-->
+    <main>
+      <!--Inicio de Formulario-->
+      <form class="form">
+        <fieldset class="form__content">
+          <legend>Contactanos</legend>
+          <br />
+          <br />
+          <!--Nombre y mail-->
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required />
+          <br />
+          <label for="email">e-mail:</label>
+          <input type="email" e-mail="e-mail" required />
+          <br />
+          <br />
+          <!--dropdown de motivo de contacto-->
+          <label for="te-escuchamos">Te escuchamos:</label>
+          <br />
+          <select name="te-escuchamos" id="te-escuchamos">
+            <option value="O">Otro</option>
+            <option value="S">Sugerencia</option>
+            <option value="Q">Queja</option>
+          </select>
+          <br />
+          <br />
+          <!--Caja de Mensaje-->
+          <label for="mensaje">Mensaje:</label>
+          <br />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="40"
+            rows="10"
+            placeholder="Escribe tu mensaje o sugerencia"
+          ></textarea>
+          <br />
+          <label>Acepta los terminos y Condiciones?</label>
+          <br />
+          <label>Acepto</label>
+          <input type="checkbox" name="acepta" value="1" required />
+          <br />
+          <br />
+          <input type="submit" value="Enviar formulario" />
+          <input type="reset" value="Borrar formulario" />
+          <br />
+          <br />
+        </fieldset>
+      </form>
+      <!--Fin de Formulario-->
+    </main>
+    <footer>
+      <ul class="social">
+        <li class="social__list">
+          <img
+            class="social__img"
+            src="../images/socialInsta.png "
+            alt="socialInsta"
+          />
+        </li>
+        <li class="social__list">
+          <img
+            class="social__img"
+            src="../images/socialFacebook.png"
+            alt="socialFacebook"
+          />
+        </li>
+        <li class="social__list">
+          <img
+            class="social__img"
+            src="../images/socialWhatsapp.png"
+            alt="socialWhatsapp"
+          />
+        </li>
+      </ul>
+      <div class="copyright">Café com leite S.A.</div>
+    </footer>
+  </body>
+</html>
