@@ -2,5 +2,6 @@
 Author: Lucio Gutierrez Hermosillo
 email: lucio.gtzhj@gmail.com
 
-![Screen Shot 2022-02-16 at 17 26 52](https://user-images.githubusercontent.com/99549767/154375065-d1a9ed3f-a309-4c05-9116-f8deb01584f0.jpg)
 
+
+![Screen Shot 2022-02-16 at 17 50 07](https://user-images.githubusercontent.com/99549767/154377068-30435973-bfdc-4381-8c36-bfcd2ff497b1.jpg)
