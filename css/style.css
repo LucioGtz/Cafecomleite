@@ -1,185 +1,9 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: "Oswald", sans-serif;
-  background-color: rgb(39, 39, 39);
-}
-
-header {
-  background-color: orange;
-  padding: 0.5rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-}
-
-/* NAV BAR*/
-.nav {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  align-content: space-around;
-
-  position: relative;
-  left: 5%;
-}
-
-.nav__logo {
-  left: 5rem;
-  opacity: 80%;
-  transition: transform 250ms;
-}
-
-.nav__logoText {
-  display: inline;
-  list-style: none;
-  text-decoration: underline;
-  font-size: 3rem;
-  color: rgb(77, 62, 36);
-}
-
-.nav__logo:hover {
-  transform: scale(1.02);
-  opacity: 100%;
-  color: white;
-  text-decoration: none;
-}
-
-.nav__list {
-  display: inline;
-  margin: center;
-  width: 50%;
-}
-
-.nav__item {
-  width: 50%;
-  margin: 0 0 0 1.5rem;
-  display: inline;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.nav__link:hover {
-  color: rgb(77, 62, 36);
-}
-
-/* PAGINA/ INDEX/ BANNER */
-.banner-text {
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  z-index: 4;
-  transform: translate(-5%, -300%);
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-  font-size: 2rem;
-}
-.bannerA {
-  background-image: linear-gradient(rgba(255, 166, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/bebidasTemporada.jpg");
-  filter: blur(1px);
-  height: 40rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  opacity: 0.2;
-  transition: filter 500ms, opacity 500ms;
-}
-.bannerA:hover {
-  background-image: linear-gradient(rgba(255, 166, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/bebidasTemporada.jpg");
-  filter: blur(0px);
-  opacity: 1;
-}
-
-.bannerB:hover {
-  background-image: linear-gradient(rgba(255, 166, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/images/paraChopear.png");
-  filter: blur(0px);
-  opacity: 1;
-}
-.bannerB {
-  background-image: linear-gradient(rgba(255, 166, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/paraChopear.png");
-  filter: blur(1px);
-  height: 40rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  opacity: 0.2;
-  transition: filter 1s, opacity 1s;
-}
-
-/* Footer */
-footer {
-  margin: auto;
-  margin-top: 10%;
-  position: relative;
-  text-align: center;
-  background-color: rgb(39, 39, 39);
-  padding: 2rem;
-  z-index: 5;
-}
-
-.social {
-  padding-top: 5rem;
-  text-align: center;
-}
-.social__list {
-  display: inline;
-  padding: 1rem;
-}
-.social__img {
-  margin-left: 1rem;
-  width: 3rem;
-  opacity: 0.75;
-  transition: transform 250ms, opacity 250ms;
-}
-.social__img:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.copyright {
-  margin-top: 1rem;
-  color: gray;
-  text-align: center;
-  font-size: 0.75rem;
-}
-
-.copyright:hover {
-  color: white;
-}
-/* PAGINA/ Contacto/ Form*/
-.form {
-  padding: 2% 10% 2% 10%;
-  margin: 0% auto;
-  background-color: rgba(252, 246, 238, 0.918);
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-.container {
+.container-menu {
   padding: 0 5% 5%;
   margin: 0% auto;
   position: relative;
   text-align: center;
-  background-color: rgba(252, 246, 238, 0.918);
+
   font-size: 1.5rem;
 }
 
@@ -213,16 +37,18 @@ legend {
 }
 .menu-seccion {
   grid-area: menu-seccion;
+  color: white;
   font-size: 2rem;
-  background-color: lightyellow;
+  background-color: orange;
 }
 .item1,
 .item2,
 .item3,
 .item4,
 .item5 {
-  background-color: rgb(224, 216, 200);
-  height: 250px;
+  height: auto;
+  background-color: beige;
+  overflow: hidden;
 }
 .item1 {
   grid-area: item1;
@@ -257,32 +83,4 @@ legend {
   border: 3px solid #ffcc80;
   border-radius: 5px;
   padding: 8px;
-}
-/* Media Queries */
-@media screen and (max-width: 600px) {
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    left: 0%;
-  }
-  .nav__logo {
-    width: 100%;
-  }
-  .nav__list {
-    width: 100%;
-    padding: 20px 0px 20px;
-  }
-  .bannerA,
-  .bannerB {
-    height: 30rem;
-  }
-  .banner-text {
-    transform: translate(50%, -300%);
-    width: 50%;
-  }
 }
