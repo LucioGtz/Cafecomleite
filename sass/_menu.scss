@@ -1,0 +1,69 @@
+/* PAGINA/ MENU/ Grid */
+.container-menu {
+  padding: 0 5% 5%;
+  margin: 0% auto;
+  position: relative;
+  text-align: center;
+
+  font-size: 1.5rem;
+  .container-menu__area {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "menu-seccion menu-seccion menu-seccion menu-seccion menu-seccion"
+      "item1 item2 item3 item4 item5";
+    border-radius: 5px;
+    padding: 8px;
+    .container-menu__area > div {
+      border-radius: 5px;
+      padding: 8px;
+    }
+  }
+}
+
+.container-menu__seccion {
+  grid-area: menu-seccion;
+  color: white;
+  font-size: 2rem;
+  background-color: orange;
+}
+
+.title,
+legend {
+  font-weight: bold;
+  padding: 1rem 0 3rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.container__text {
+  color: grey;
+  text-align: center;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  height: auto;
+  background-color: beige;
+  overflow: hidden;
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
