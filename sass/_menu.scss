@@ -1,4 +1,5 @@
 /* PAGINA/ MENU/ Grid */
+
 .container-menu {
   padding: 0 5% 5%;
   margin: 0% auto;
@@ -17,7 +18,7 @@
       "item1 item2 item3 item4 item5";
     border-radius: 5px;
     padding: 8px;
-    .container-menu__area > div {
+    > div {
       border-radius: 5px;
       padding: 8px;
     }
@@ -28,7 +29,7 @@
   grid-area: menu-seccion;
   color: white;
   font-size: 2rem;
-  background-color: orange;
+  background-color: $seccioncolor;
 }
 
 .title,
@@ -49,7 +50,7 @@ legend {
 .item4,
 .item5 {
   height: auto;
-  background-color: beige;
+  background-color: $itemcolor;
   overflow: hidden;
 }
 .item1 {
@@ -66,4 +67,12 @@ legend {
 }
 .item5 {
   grid-area: item5;
+}
+
+.img-menu {
+  max-width: 90%;
+  height: auto;
+}
+.img-menu:hover {
+  max-width: 100%;
 }

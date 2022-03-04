@@ -10,12 +10,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   padding: 15px;
   gap: 5px;
@@ -26,6 +26,14 @@
   border: 3px solid #ffcc80;
   border-radius: 5px;
   padding: 8px;
+}
+
+.footer--color {
+  background-color: #313131;
+}
+
+.list-style-none {
+  list-style: none;
 }
 
 /* PAGINA/ MENU/ Grid */
@@ -42,16 +50,16 @@
   display: grid;
   grid-auto-flow: column;
   -ms-grid-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
-  grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+      grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
   -ms-grid-rows: 0.2fr 1fr;
-  grid-template-rows: 0.2fr 1fr;
+      grid-template-rows: 0.2fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "menu-seccion menu-seccion menu-seccion menu-seccion menu-seccion" "item1 item2 item3 item4 item5";
+      grid-template-areas: "menu-seccion menu-seccion menu-seccion menu-seccion menu-seccion" "item1 item2 item3 item4 item5";
   border-radius: 5px;
   padding: 8px;
 }
 
-.container-menu .container-menu__area .container-menu__area > div {
+.container-menu .container-menu__area > div {
   border-radius: 5px;
   padding: 8px;
 }
@@ -117,5 +125,49 @@ legend {
   -ms-grid-row: 2;
   -ms-grid-column: 5;
   grid-area: item5;
+}
+
+.img-menu {
+  max-width: 90%;
+  height: auto;
+}
+
+.img-menu:hover {
+  max-width: 100%;
+}
+
+/* Animaciones */
+.containerNuestroCafe {
+  width: 50vw;
+}
+
+.image {
+  width: 10rem;
+}
+
+.image_fadein {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

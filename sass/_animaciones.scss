@@ -1,0 +1,43 @@
+/* Animaciones */
+.containerNuestroCafe {
+  width: 50vw;
+}
+
+.image {
+  width: $imagesize;
+}
+.image_fadein {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+@mixin fade-0-100 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  @include fade-0-100;
+}
+
+@-moz-keyframes fadeIn {
+  @include fade-0-100;
+}
+
+@-webkit-keyframes fadeIn {
+  @include fade-0-100;
+}
+
+@-o-keyframes fadeIn {
+  @include fade-0-100;
+}
+
+@-ms-keyframes fadeIn {
+  @include fade-0-100;
+}
